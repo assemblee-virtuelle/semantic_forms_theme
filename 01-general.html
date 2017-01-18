@@ -16,6 +16,87 @@
   <h2>Titre 1</h2>
   <h3>Titre 2</h3>
   <h4>Titre 3</h4>
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col col-sm-4 col-sm-offset-4">
+        <form class="form-auth">
+          <h2>Authentification</h2>
+          <label>Pseudo</label>
+          <input class="form-control" placeholder="MyPseudo" type="text">
+          <label>Mot de passe</label>
+          <input class="form-control" placeholder="Password" type="password">
+          <br>
+          <div class="row">
+            <div class="col col-sm-6">
+              <input class="form-control btn btn-password-forgot" type="button"
+                     value="Mot de passe oublié">
+            </div>
+            <div class="col col-sm-6">
+              <input class="form-control btn btn-primary" type="submit"
+                     value="Se connecter">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="searchBox">
+    <div class="row">
+      <div class="col col-sm-10 col-sm-offset-1">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active">
+            <a href="#search" aria-controls="search" role="tab"
+               data-toggle="tab">
+              <span class="glyphicon glyphicon-search"></span>
+              Recherche
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="#add" aria-controls="add" role="tab" data-toggle="tab">
+              <span class="glyphicon glyphicon-plus"></span>
+              Ajouter
+            </a>
+          </li>
+        </ul>
+        <br>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="search">
+            <div class="row">
+              <!-- Search -->
+              <form>
+                <div class="col col-sm-10">
+                  <input class="form-control" type="text" placeholder="URI ou terme de recherche">
+                </div>
+                <div class="col col-sm-2">
+                  <input class="form-control btn btn-primary" type="button" value="Ok">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="add">
+            <!-- TODO Add -->
+            <form>
+              <div class="col col-sm-10">
+
+              </div>
+              <div class="col col-sm-2">
+                <input class="form-control btn btn-primary" type="button" value="Ok">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div>
+
+
+  </div>
 </section>
 <footer>
   <a href="#">Tools</a> /

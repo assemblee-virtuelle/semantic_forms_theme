@@ -21,6 +21,16 @@ header {
 
 section#page {
   padding: 20px; }
+  section#page .form-auth label {
+    visibility: hidden; }
+  section#page .form-auth .btn-password-forgot {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.3);
+    border: 0;
+    box-shadow: none;
+    font-weight: bold; }
+  section#page .form-auth .btn-password-forgot:hover {
+    color: rgba(0, 0, 0, 0.8); }
 
 footer {
   background: #f5f5f5;

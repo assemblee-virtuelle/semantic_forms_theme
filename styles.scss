@@ -27,6 +27,21 @@ header {
 
 section#page {
   padding: 20px;
+  .form-auth {
+    label {
+      visibility: hidden;
+    }
+    .btn-password-forgot {
+      font-size: 12px;
+      color: rgba(0, 0, 0, .3);
+      border: 0;
+      box-shadow: none;
+      font-weight: bold;
+    }
+    .btn-password-forgot:hover {
+      color: rgba(0, 0, 0, .8);
+    }
+  }
 }
 
 footer {
