@@ -61,6 +61,26 @@ section#page {
   }
 }
 
+.result-full {
+  font-size: 16px;
+  font-family: Quicksand, sans-serif;
+  img.thumb {
+    border: 1px solid rgba(0, 0, 0, .3);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 7px rgba(0, 0, 0, 0.1);
+  }
+  .row {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    .result-field-label {
+      font-weight: bold;
+      text-align: right;
+      opacity: .3;
+    }
+    .col {
+      padding: 10px;
+    }
+  }
+}
+
 footer {
   background: #f5f5f5;
   color: #CCC;
