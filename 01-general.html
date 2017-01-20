@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
   <script src="lib/bootstrap/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
 </head>
 <body>
 <header>
@@ -18,14 +19,44 @@
   <h4>Titre 3</h4>
   <hr>
   <div class="container">
+    <div class="message">Message</div>
     <div class="row">
       <div class="col col-sm-4 col-sm-offset-4">
+
+        <!-- Auth -->
         <form class="form-auth">
           <h2>Authentification</h2>
           <label>Pseudo</label>
           <input class="form-control" placeholder="MyPseudo" type="text">
           <label>Mot de passe</label>
           <input class="form-control" placeholder="Password" type="password">
+          <br>
+          <div class="row">
+            <div class="col col-sm-6">
+              <input class="form-control btn btn-password-forgot" type="button"
+                     value="Mot de passe oublié">
+            </div>
+            <div class="col col-sm-6">
+              <input class="form-control btn btn-primary" type="submit"
+                     value="Se connecter">
+            </div>
+          </div>
+        </form>
+
+        <!-- Register -->
+        <form class="form-register">
+          <h2>Inscription</h2>
+          <label>Pseudo</label>
+          <input class="form-control" placeholder="MyPseudo" type="text">
+          <label>Mot de passe</label>
+          <div class="input-group">
+            <input class="form-control input-password" placeholder="Password" type="password">
+            <span class="input-group-btn input-group-password">
+              <button class="btn btn-default" type="button">
+                <span class="auth-see-password glyphicon glyphicon-eye-open" title="Voir le mot de passe"></span>
+              </button>
+            </span>
+          </div>
           <br>
           <div class="row">
             <div class="col col-sm-6">
@@ -98,20 +129,43 @@
         <div class="search-results">
           <div class="search-results-item">
             <h4>Jean-Marc </h4>
-            <div class="uri">http://mysuperdomain.com/uri.rdf#something</div>
-            <p></p>
+            <a href="http://mysuperdomain.com/uri.rdf#something" class="uri">http://mysuperdomain.com/uri.rdf#something</a>
+            <p class="detail">TODO</p>
           </div>
           <div class="search-results-item">
             <h4>George Clooney</h4>
-            <div class="uri">http://mysuperdomain.com/uri.rdf#something</div>
-            <p></p>
+            <a href="http://mysuperdomain.com/uri.rdf#something" class="uri">http://mysuperdomain.com/uri.rdf#something</a>
+            <p class="detail">TODO</p>
           </div>
           <div class="search-results-item">
             <h4>Leonardo Di Caprio</h4>
-            <div class="uri">http://mysuperdomain.com/uri.rdf#something</div>
-            <p></p>
+            <a href="http://mysuperdomain.com/uri.rdf#something" class="uri">http://mysuperdomain.com/uri.rdf#something</a>
+            <p class="detail">TODO</p>
           </div>
         </div>
+        <nav aria-label="Page navigation">
+          <ul class="pagination">
+            <li>
+              <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">1</a>
+            </li>
+            <li class="active">
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </div>

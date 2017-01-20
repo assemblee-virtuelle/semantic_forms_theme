@@ -1,3 +1,5 @@
+$avBlue: #93DAFE;
+
 body {
   font-family: Helvetica, sans-serif;
   margin: 0;
@@ -16,7 +18,7 @@ a {
 }
 
 header {
-  background: #93DAFE;
+  background: $avBlue;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, .3) 0px 2px 2px;
   h1 {
@@ -27,7 +29,7 @@ header {
 
 section#page {
   padding: 20px;
-  .form-auth {
+  .form-auth, .form-register {
     label {
       visibility: hidden;
     }
@@ -41,6 +43,21 @@ section#page {
     .btn-password-forgot:hover {
       color: rgba(0, 0, 0, .8);
     }
+  }
+}
+
+.search-results {
+  .search-results-item {
+    a.uri {
+      color: $avBlue;
+    }
+    .detail {
+      color: #555;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #DDD;
   }
 }
 

@@ -21,16 +21,26 @@ header {
 
 section#page {
   padding: 20px; }
-  section#page .form-auth label {
+  section#page .form-auth label, section#page .form-register label {
     visibility: hidden; }
-  section#page .form-auth .btn-password-forgot {
+  section#page .form-auth .btn-password-forgot, section#page .form-register .btn-password-forgot {
     font-size: 12px;
     color: rgba(0, 0, 0, 0.3);
     border: 0;
     box-shadow: none;
     font-weight: bold; }
-  section#page .form-auth .btn-password-forgot:hover {
+  section#page .form-auth .btn-password-forgot:hover, section#page .form-register .btn-password-forgot:hover {
     color: rgba(0, 0, 0, 0.8); }
+
+.search-results .search-results-item {
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #DDD; }
+  .search-results .search-results-item a.uri {
+    color: #93DAFE; }
+  .search-results .search-results-item .detail {
+    color: #555;
+    font-size: 12px;
+    margin-top: 10px; }
 
 footer {
   background: #f5f5f5;
