@@ -52,12 +52,12 @@
           <div class="input-group">
             <input class="form-control input-password" placeholder="Password"
                    type="password">
-            <span class="input-group-btn input-group-password">
-              <button class="btn btn-default" type="button">
-                <span class="auth-see-password glyphicon glyphicon-eye-open"
-                      title="Voir le mot de passe"></span>
-              </button>
-            </span>
+  <span class="input-group-btn input-group-password">
+  <button class="btn btn-default" type="button">
+  <span class="auth-see-password glyphicon glyphicon-eye-open"
+        title="Voir le mot de passe"></span>
+  </button>
+  </span>
           </div>
           <br>
           <div class="row">
@@ -94,7 +94,7 @@
 
         <!-- Tab panes -->
         <div class="tab-content">
-          <div role="tabpanel" class="tab-pane active" id="search">
+          <div role="tabpanel" class="tab-pane " id="search">
             <div class="row">
               <!-- Search -->
               <form>
@@ -109,17 +109,101 @@
               </form>
             </div>
           </div>
-          <div role="tabpanel" class="tab-pane" id="add">
-            <!-- TODO Add -->
+          <div role="tabpanel" class="tab-pane active" id="add">
+            <!-- Add -->
             <form>
-              <div class="col col-sm-10">
-
+              <div class="col col-sm-12 create-menu">
+                <ul class="row">
+                  <li class="col col-sm-3">
+                    <span class="section-title">Projets</span>
+                    <ul class="section-content">
+                      <li>
+                        <a href="#">Blah</a>
+                      </li>
+                      <li>
+                        <a href="#">Blah</a>
+                      </li>
+                      <li>
+                        <a href="#">Blah</a>
+                      </li>
+                      <li>
+                        <a href="#">Blah</a>
+                      </li>
+                      <li>
+                        <a href="#">Blah</a>
+                      </li>
+                      <li>
+                        <a href="#">Blah</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="col col-sm-3">
+                    <span class="section-title">Acteurs</span>
+                    <ul class="section-content">
+                      <li>
+                        <a href="#">Blah</a>
+                      </li>
+                      <li>
+                        <a href="#">Blah</a>
+                      </li>
+                      <li>
+                        <a href="#">Blah</a>
+                      </li>
+                      <li>
+                        <a href="#">Blah</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="col col-sm-3">
+                    <span class="section-title">Idées</span>
+                    <ul class="section-content">
+                      <li>
+                        <a href="#">Blah</a>
+                      </li>
+                      <li>
+                        <a href="#">Blah</a>
+                      </li>
+                      <li>
+                        <a href="#">Blah</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="col col-sm-3">
+                    <span class="section-title">Ressources</span>
+                    <ul class="section-content">
+                      <li>
+                        <a href="#">Blah</a>
+                      </li>
+                      <li>
+                        <a href="#">Blah</a>
+                      </li>
+                      <li>
+                        <a href="#">Blah</a>
+                      </li>
+                      <li>
+                        <a href="#">Blah</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
-              <div class="col col-sm-2">
-                <input class="form-control btn btn-primary" type="button"
-                       value="Ok">
+              <div class="col col-sm-3 col-sm-offset-9">
+                <a id="create-advanced" href="">&raquo; Avancé</a>
               </div>
+              <div class="clearfix"></div>
+              <div class="create-advanced">
+                <div class="col col-sm-10">
+                  <input class="form-control" type="text"
+                         placeholder="URI du vocabulaire">
+                </div>
+                <div class="col col-sm-2">
+                  <input class="form-control btn btn-primary" type="button"
+                         value="Ok">
+                </div>
+              </div>
+              <div class="clearfix"></div>
             </form>
+
           </div>
         </div>
 
@@ -128,17 +212,17 @@
           <div class="search-results-item">
             <h4>Jean-Marc </h4>
             <a href="http://mysuperdomain.com/uri.rdf#something" class="uri">http://mysuperdomain.com/uri.rdf#something</a>
-            <p class="detail">TODO</p>
+            <p class="detail">Truc / Machin / Bidule / Chose</p>
           </div>
           <div class="search-results-item">
             <h4>George Clooney</h4>
             <a href="http://mysuperdomain.com/uri.rdf#something" class="uri">http://mysuperdomain.com/uri.rdf#something</a>
-            <p class="detail">TODO</p>
+            <p class="detail">Truc / Machin / Bidule / Chose</p>
           </div>
           <div class="search-results-item">
             <h4>Leonardo Di Caprio</h4>
             <a href="http://mysuperdomain.com/uri.rdf#something" class="uri">http://mysuperdomain.com/uri.rdf#something</a>
-            <p class="detail">TODO</p>
+            <p class="detail">Truc / Machin / Bidule / Chose</p>
           </div>
         </div>
         <nav aria-label="Page navigation">
@@ -183,11 +267,15 @@
           </div>
           <div class="row">
             <div class="col col-sm-2 result-field-label">Site Web</div>
-            <div class="col col-sm-10 result-field-content">http://jmvanel.free.fr</div>
+            <div class="col col-sm-10 result-field-content">
+              http://jmvanel.free.fr
+            </div>
           </div>
           <div class="row">
             <div class="col col-sm-2 result-field-label">Téléphone</div>
-            <div class="col col-sm-10 result-field-content">tel:+33-689-162-952</div>
+            <div class="col col-sm-10 result-field-content">
+              tel:+33-689-162-952
+            </div>
           </div>
           <div class="row">
             <div class="col col-sm-2 result-field-label">Sujet d'intérêt</div>

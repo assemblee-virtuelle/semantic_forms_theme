@@ -1,5 +1,4 @@
 $(function () {
-
   // Password zone.
   var $passwordSection = $('.input-group-password');
   $passwordSection.each(function () {

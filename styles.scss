@@ -13,8 +13,19 @@ h2, h3, h4 {
   color: rgba(0, 0, 0, .2);
 }
 
-a {
+a,
+a:hover,
+a:active {
   text-decoration: none;
+}
+
+a {
+  color: $avBlue;
+}
+
+a:hover {
+  background: #FFCC00;
+  color: white;
 }
 
 header {
@@ -44,6 +55,31 @@ section#page {
       color: rgba(0, 0, 0, .8);
     }
   }
+  .create-menu {
+    ul, li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .section-title {
+      background-color: #93DAFE;
+      color: #FFF;
+      display: block;
+      padding: 6px 12px;
+      font-size: 18px;
+      margin: 4px;
+    }
+    .section-content {
+      margin: 4px;
+      a {
+        display: block;
+        padding: 5px;
+      }
+    }
+  }
+  .create-advanced {
+    margin: 20px auto;
+  }
 }
 
 .search-results {
@@ -52,8 +88,8 @@ section#page {
       color: $avBlue;
     }
     .detail {
-      color: #555;
-      font-size: 12px;
+      color: #AAA;
+      font-size: 14px;
       margin-top: 10px;
     }
     padding: 10px 0 10px 0;
